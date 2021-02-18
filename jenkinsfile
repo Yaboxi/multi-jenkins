@@ -4,7 +4,10 @@ pipeline {
 
     stages {
         stage('Test') {
-            steps { sh "pytest tests/" }
+            steps { sh "python --help" }
+        }
+        stage('Test') {
+            steps { sh "pytest --help" }
         }
     }
 }
