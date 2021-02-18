@@ -1,0 +1,10 @@
+pipeline {
+    agent { label 'yabusaki' }
+    options { disableConcurrentBuilds() }
+
+    stages {
+        stage('Test') {
+            steps { echo "Hello World" }
+        }
+    }
+}
