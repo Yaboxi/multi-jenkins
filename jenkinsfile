@@ -3,7 +3,7 @@ pipeline {
     options { disableConcurrentBuilds() }
 
     stages {
-        stage('Test') {
+        stage('Python') {
             steps { sh "python --help" }
         }
         stage('Test') {
